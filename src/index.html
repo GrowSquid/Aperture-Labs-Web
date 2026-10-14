@@ -2,7 +2,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1 viewport-fit=cover">
 <title>Aperture Laboratories</title>
 
-<!--c# stands color-->
+<!--c# stands for color-->
 <style>
     :root {
         --c1: #f28c28;
@@ -224,8 +224,106 @@ footer {
 
         <section id="team">
             <h2>Meet the Team <small>(like TF2)</small></h2>
-            
+
+            <div class="grid">
+                <article class="card">
+                    <h3>GlaDOS</h3>
+                    <small>
+                        Director of Research
+                    </small>
+
+                    <p>
+                        Acts as the test subject's Big Brother (or Big Robot)
+                    </p>
+
+                    <p class="quote">
+                        "You look great, by the way. Very healthy"
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Wheatley</h3>
+                    <small>Consultant, British</small>
+
+                    <p>
+                        Bringing an actual ounce of energy, an employee who doesn't know enough
+                    </p>
+
+                    <p class="quote">
+                        "Just glass. Transparent. Smooth. Not going to hurt you. Have a look."
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Sentry Turrets</h3>
+                    <small>Security</small>
+
+                    <p>
+                        Dedicated professionals who have a little trouble staying on their feet.
+                    </p>
+
+                    <p class="quote">
+                        "Your business is appreciated."
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section id="goals">
+            <h2>Our Company Goals</h2>
+
+            <div class="grid">
+                <article class="card">
+                    <h3>Optimize Humanity</h3>
+
+                    <p>
+                        Getting our tech to the cream of the crop
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Build a Better Tomorrow</h3>
+
+                    <p>
+                        One <s>carefully</s> controlled experiment at a time.
+                    </p>
+                </article>
+            </div>
+
+            <div class="notice">
+                <strong>Important</strong>
+                Aperture Laboratories is a fictional company.
+                Please do not attempt experimental portal technology
+                at home, at work, or on any white walls
+            </div>
         </section>
     </main>
+
+    <footer>
+        Aperture Laboratories © Whenever the paperwork was filed.
+        "We do what we must because we can" is not our official
+        motto. Legal asked us to clarify that.
+	    ALL ASSETS AND CHARACTERS OWNED BY VALVE CORPORATION
+    </footer>
+    
+    <script>
+        const reviews = [
+            "Review received: The science was advanced. My understanding was not.",
+            "Review received: Five stars for innovation. One star for the elevator situation.",
+      "Review received: I learned a lot. Mostly where not to stand.",
+      "Review received: Would recommend to a friend, assuming the friend signs the waiver."
+    ];
+
+    let reviewIndex = 0;
+
+    document
+      .getElementById("review-button")
+      .addEventListener("click", function () {
+        document.getElementById("review-note").textContent =
+          reviews[reviewIndex % reviews.length];
+
+        reviewIndex++;
+      });
+    </script>
 </body>
 
