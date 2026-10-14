@@ -1,5 +1,0 @@
-create an extremely simple html website with witty phrases like portal 2 had. The website is about Aperture labororatories from portal 1. The website should be a fictional company page about the products, reviews, employees (being only the turrets, wheatley and gladOS), and the company goals. use only one <script> and <style>
-git remote add origin https://github.com/GrowSquid/Aperture-Labs-Web.git
-git branch -M main
-git push -u origin main
-u
