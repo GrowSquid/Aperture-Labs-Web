@@ -1,0 +1,360 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1 viewport-fit=cover">
+<title>Aperture Laboratories</title>
+
+<!--c# stands for color-->
+<style>
+    :root {
+        --c1: #f28c28;
+        --ink: #20252a;
+        --c2: #f3f3ef;
+        --c3: #2676a8;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        margin: 0;
+        color: var(--ink);
+        background: var(--c2);
+        font: 16px/1.55 Arial, Helvetica, sans-serif;
+    }
+
+    header {
+        background: white;
+        border-bottom: 5px solid var(--c1);
+        padding: 1rem max(1.25rem, calc((100%-1000px) / 2));
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .brand {
+        font-weight: 900;
+        letter-spacing: .08em;
+    }
+
+    .brand span {
+        color: var(--c1)
+    }
+
+    nav {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        color: var(--ink);
+        text-decoration: none;
+        font-size: .9rem;
+    }
+
+    nav a:hover {
+        color: var(--c3);
+        text-decoration: underline;
+    }
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 1.25rem 3rem;
+}
+
+.hero {
+    margin: 2rem 0;
+    padding: 0 1.25rem 3rem;
+    color: white;
+    background: linear-gradient(135deg, #20252a, #414a52);
+    border-top: 5px solid var(--c1);
+    border-bottom: 5px solid var(--c1);
+    border-radius: 12px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: clamp(2.5re);
+    line-height: 1.1;
+    margin: 1rem 0;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: 1rem;
+    font-size: 1.1rem;
+    color: #eeeeee;
+}
+
+.eyebrow {
+    color: #ffb45f;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    font-size: .78rem;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: clamp(2.3rem, 7vw, 4.8rem);
+    line-height: .98;
+    margin: .6rem 0 1 rem;
+}
+
+h2 {
+    margin-bottom: .35rem;
+}
+
+h3 {
+    margin-bottom: .35rem;
+}
+
+.hero p {
+    max-width: 620px;
+    font-size: 1.1rem;
+}
+
+.button {
+    display: inline-block;
+    margin-top: .7rem;
+    padding: .75rem;
+    background: var(--c1);
+    color: #171717;
+    font-weight: bold;
+    text-decoration: none;
+    border: 0;
+    cursor: pointer;
+}
+
+footer {
+    background: var(--ink);
+    color: #eee;
+    padding: 1.5rem;
+    text-align: center;
+    font-size: .85rem;
+}
+
+#review-note {
+    min-height: 1.35rem;
+    color: var(--c3);
+    font-weight: bold;
+}
+
+.product-image {
+    width: 100%;
+    height: 180;
+    object-fit: contain;
+    background: var(--c1);
+    border-radius: ;
+}
+</style>
+
+<body>
+    <header>
+        <div class="brand">
+            APERTURE <span>LABORATORIES</span>
+        </div>
+        
+        <nav aria-label="Main navigation">
+        <a href="#products">Products</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#team">Our Goals</a>
+        <a href="#goals">Our Goals
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="eyebrow">
+                Science • Combustion • Insurance
+            </div>
+            
+            <h1>Tomorrow's Science</h1>
+
+            <p>
+                At Aperture Laboratories, we turn small potato theories into big potato machines.
+            </p>
+            <a class="button" href="#products">
+                Explore our products
+            </a>    
+        </section>
+
+        <section id="products">
+            <h2>Products & Services</h2>
+
+            <div class="card">
+                <article class="card">
+                    <span class="tag">One of a Kind</span>
+                    <img
+                        class="product-image"
+                        src="images/portal-gun.png"
+                        alt="Aperture Science Portal Gun"    
+                    >
+                    <h3>Portal Gun</h3>
+
+                    <p>
+                        Spawn a couple ovals and enjoy breaking every law of physics; while making new ones!
+                    </p>
+
+                    <small>
+                        Warranty excludes anyone named Chel
+                    </small>
+                </article>
+
+                <article class="card">
+                    <span class="tag">Morale Improver</span>
+                    <img
+                        class="product-image"
+                        src="images/turret.png"
+                        alt="Aperture Science Sentry Turret"
+                    <h3>Automated  Sentry Turret</h3>
+                    <p>
+                        Compact. Accurate. Enthusiastic about target aquisition. Less about moving backwards.
+                    </p>
+
+                    <small>
+                        Turret may produce existential questions not currently known to man.
+                    </small>
+                </article>
+            </div>
+        </section>
+
+        <section id="reviews">
+            <h2>Customer Reviews</h2>
+
+            <div class="grid">
+                <article class="card">
+                    <h3>★★★★★  <small>-Test Subject #47393</small></h3>
+                    <p class="quote">
+                        "The rooms were clean, and the cake at the end was delicious"
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>★★★★★ <small>- Not GlaDOS</small></h3>
+                    <p class="quote">
+                        "The Director is extremely attractive, and the cake given to our subjects is impressive"
+                    </p>
+                </article>
+            </div>
+            
+            <article class="card">
+                    <h3>★☆☆☆☆ <small>- Training Escapee</small></h3>
+                    <p class="quote">
+                        "THE CAKE IS A LIE THE CAKE IS A LIE THE CAKE IS A LIE"
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section id="team">
+            <h2>Meet the Team <small>(like TF2)</small></h2>
+
+            <div class="grid">
+                <article class="card">
+                    <h3>GlaDOS</h3>
+                    <small>
+                        Director of Research
+                    </small>
+
+                    <p>
+                        Acts as the test subject's Big Brother (or Big Robot)
+                    </p>
+
+                    <p class="quote">
+                        "You look great, by the way. Very healthy"
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Wheatley</h3>
+                    <small>Consultant, British</small>
+
+                    <p>
+                        Bringing an actual ounce of energy, an employee who doesn't know enough
+                    </p>
+
+                    <p class="quote">
+                        "Just glass. Transparent. Smooth. Not going to hurt you. Have a look."
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Sentry Turrets</h3>
+                    <small>Security</small>
+
+                    <p>
+                        Dedicated professionals who have a little trouble staying on their feet.
+                    </p>
+
+                    <p class="quote">
+                        "Your business is appreciated."
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section id="goals">
+            <h2>Our Company Goals</h2>
+
+            <div class="grid">
+                <article class="card">
+                    <h3>Optimize Humanity</h3>
+
+                    <p>
+                        Getting our tech to the cream of the crop
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Build a Better Tomorrow</h3>
+
+                    <p>
+                        One <s>carefully</s> controlled experiment at a time.
+                    </p>
+                </article>
+            </div>
+
+            <div class="notice">
+                <strong>Important</strong>
+                Aperture Laboratories is a fictional company.
+                Please do not attempt experimental portal technology
+                at home, at work, or on any white walls
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        Aperture Laboratories © Whenever the paperwork was filed.
+        "We do what we must because we can" is not our official
+        motto. Legal asked us to clarify that.
+	    ALL ASSETS AND CHARACTERS OWNED BY VALVE CORPORATION
+    </footer>
+    
+    <script>
+        const reviews = [
+            "Review received: The science was advanced. My understanding was not.",
+            "Review received: Five stars for innovation. One star for the elevator situation.",
+      "Review received: I learned a lot. Mostly where not to stand.",
+      "Review received: Would recommend to a friend, assuming the friend signs the waiver."
+    ];
+
+    let reviewIndex = 0;
+
+    document
+      .getElementById("review-button")
+      .addEventListener("click", function () {
+        document.getElementById("review-note").textContent =
+          reviews[reviewIndex % reviews.length];
+
+        reviewIndex++;
+      });
+    </script>
+</body>
+
