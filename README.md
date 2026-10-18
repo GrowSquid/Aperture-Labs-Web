@@ -9,9 +9,6 @@ Rosters of Aperture's Employees
 Pictures with custom backgrounds for all of the above  
 
 ## Deployment  
-You can access the website here:  
-https://moderate-gold-dbfmf4bm.edgeone.dev/  
-OR  
 Download the source files directly, including the images  
 and run in a browser of your choice
 
