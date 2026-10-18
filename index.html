@@ -83,7 +83,9 @@ main {
 .hero h1 {
     font-size: clamp(2.5re);
     line-height: 1.1;
-    margin: 1rem 0;
+    margin: 1rem auto;
+    color: #eeeeee;
+    text-decoration: none;
 }
 
 .hero p {
@@ -91,6 +93,10 @@ main {
     margin: 1rem;
     font-size: 1.1rem;
     color: #eeeeee;
+}
+
+.hero a {
+    text-decoration: none;
 }
 
 .eyebrow {
@@ -116,8 +122,12 @@ h3 {
 }
 
 .hero p {
-    max-width: 620px;
+    max-width: 600px;
+    margin: 1rem auto 1.5rem;
     font-size: 1.1rem;
+    color: #eeeeee;
+    text-align: center;
+    text-decoration: none;
 }
 
 .button {
@@ -146,12 +156,43 @@ footer {
     font-weight: bold;
 }
 
-.product-image {
+.glados-image {
     width: 100%;
     height: 180;
     object-fit: contain;
-    background: var(--c1);
+    background: repeating-linear-gradient(#e4e6e74d, #a14f18, #e4e6e74d);
     border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 1rem;
+}
+
+.wheatley-image {
+    width: 100%;
+    height: 180;
+    object-fit: contain;
+    background: repeating-linear-gradient(#e4e6e74d, #126893, #e4e6e74d);
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 1rem;
+}
+
+.gun-image {
+    width: 100%;
+    height: 180;
+    object-fit: contain;
+    background: repeating-linear-gradient(#e4e6e74d,#126893,#a14f18, #e4e6e74d);
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 1rem;
+}
+
+.turret-image {
+    width: 100%;
+    height: 180;
+    object-fit: contain;
+    background: repeating-linear-gradient(#e4e6e74d,#9d2816, #e4e6e74d);
+    border-radius: 8px;
+    padding: 15px;
     margin-bottom: 1rem;
 }
 </style>
@@ -165,8 +206,8 @@ footer {
         <nav aria-label="Main navigation">
         <a href="#products">Products</a>
         <a href="#reviews">Reviews</a>
-        <a href="#team">Our Goals</a>
-        <a href="#goals">Our Goals
+        <a href="#team">Meet the Team</a>
+        <a href="#goals">Our Goals </a>
         </nav>
     </header>
 
@@ -179,7 +220,10 @@ footer {
             <h1>Tomorrow's Science</h1>
 
             <p>
-                At Aperture Laboratories, we turn small potato theories into big potato machines.
+                <b>At Aperture Laboratories<br></b>
+                We turn small potato theories into big potato machines.<br>
+                Website created by GrowSquid
+
             </p>
             <a class="button" href="#products">
                 Explore our products
@@ -191,14 +235,13 @@ footer {
 
             <div class="card">
                 <article class="card">
+                    <h3>Portal Gun</h3>
                     <span class="tag">One of a Kind</span>
                     <img
-                        class="product-image"
+                        class="gun-image"
                         src="images/portal-gun.png"
                         alt="Aperture Science Portal Gun"    
                     >
-                    <h3>Portal Gun</h3>
-
                     <p>
                         Spawn a couple ovals and enjoy breaking every law of physics; while making new ones!
                     </p>
@@ -209,12 +252,13 @@ footer {
                 </article>
 
                 <article class="card">
+                    <h3>Automated  Sentry Turret</h3>
                     <span class="tag">Morale Improver</span>
                     <img
-                        class="product-image"
+                        class="turret-image"
                         src="images/turret.png"
                         alt="Aperture Science Sentry Turret"
-                    <h3>Automated  Sentry Turret</h3>
+                    >
                     <p>
                         Compact. Accurate. Enthusiastic about target aquisition. Less about moving backwards.
                     </p>
@@ -231,25 +275,25 @@ footer {
 
             <div class="grid">
                 <article class="card">
-                    <h3>★★★★★  <small>-Test Subject #47393</small></h3>
-                    <p class="quote">
+                    <h3>★★★★★<small> -Test Subject #47393</small></h3>
+                    <p class="quote" style="text-align: center;">
                         "The rooms were clean, and the cake at the end was delicious"
                     </p>
                 </article>
 
                 <article class="card">
                     <h3>★★★★★ <small>- Not GlaDOS</small></h3>
-                    <p class="quote">
+                    <p class="quote" style="text-align: center;">
                         "The Director is extremely attractive, and the cake given to our subjects is impressive"
                     </p>
                 </article>
             </div>
             
             <article class="card">
-                    <h3>★☆☆☆☆ <small>- Training Escapee</small></h3>
-                    <p class="quote">
+                    <h3><s>★☆☆☆☆ <small>- Training Escapee</small></s></h3>
+                    <p class="quote" style="text-align: center;"><s>
                         "THE CAKE IS A LIE THE CAKE IS A LIE THE CAKE IS A LIE"
-                    </p>
+                    </s></p>
                 </article>
             </div>
         </section>
@@ -260,6 +304,11 @@ footer {
             <div class="grid">
                 <article class="card">
                     <h3>GlaDOS</h3>
+                    <img
+                        class="glados-image"
+                        src="images/glados.png"
+                        alt="GlaDOS"    
+                    >
                     <small>
                         Director of Research
                     </small>
@@ -277,25 +326,18 @@ footer {
                     <h3>Wheatley</h3>
                     <small>Consultant, British</small>
 
+                    <img
+                        class="wheatley-image"
+                        src="images/wheatley.png"
+                        alt="Wheatley"    
+                    >
+
                     <p>
                         Bringing an actual ounce of energy, an employee who doesn't know enough
                     </p>
 
                     <p class="quote">
                         "Just glass. Transparent. Smooth. Not going to hurt you. Have a look."
-                    </p>
-                </article>
-
-                <article class="card">
-                    <h3>Sentry Turrets</h3>
-                    <small>Security</small>
-
-                    <p>
-                        Dedicated professionals who have a little trouble staying on their feet.
-                    </p>
-
-                    <p class="quote">
-                        "Your business is appreciated."
                     </p>
                 </article>
             </div>
@@ -322,10 +364,10 @@ footer {
                 </article>
             </div>
 
-            <div class="notice">
-                <strong>Important</strong>
-                Aperture Laboratories is a fictional company.
-                Please do not attempt experimental portal technology
+            <div class="notice" style="text-align: center;">
+                <strong>Important<br></strong>
+                Aperture Laboratories is a fictional company.<br>
+                Please do not attempt experimental portal technology<br>
                 at home, at work, or on any white walls
             </div>
         </section>
@@ -337,25 +379,6 @@ footer {
         motto. Legal asked us to clarify that.
 	    ALL ASSETS AND CHARACTERS OWNED BY VALVE CORPORATION
     </footer>
-    
-    <script>
-        const reviews = [
-            "Review received: The science was advanced. My understanding was not.",
-            "Review received: Five stars for innovation. One star for the elevator situation.",
-      "Review received: I learned a lot. Mostly where not to stand.",
-      "Review received: Would recommend to a friend, assuming the friend signs the waiver."
-    ];
-
-    let reviewIndex = 0;
-
-    document
-      .getElementById("review-button")
-      .addEventListener("click", function () {
-        document.getElementById("review-note").textContent =
-          reviews[reviewIndex % reviews.length];
-
-        reviewIndex++;
-      });
     </script>
 </body>
 
