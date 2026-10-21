@@ -9,6 +9,9 @@ Rosters of Aperture's Employees
 Pictures with custom backgrounds for all of the above  
 
 ## Deployment  
+Open via Github Pages:  
+https://growsquid.github.io/Aperture-Labs-Web/  
+OR  
 Download the source files directly, including the images  
 and run in a browser of your choice
 
